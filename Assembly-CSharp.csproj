@@ -36,10 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/PostmanController.cs" />
      <Compile Include="Assets/Postman.cs" />
-     <Compile Include="Assets/Scripts/ManController.cs" />
      <Compile Include="Assets/FollowTransform.cs" />
+     <Compile Include="Assets/StaminaBarController.cs" />
+     <Compile Include="Assets/Scripts/ManController.cs" />
      <Compile Include="Assets/CollisionDog.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/helmi/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

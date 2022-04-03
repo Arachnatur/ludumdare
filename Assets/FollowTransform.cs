@@ -6,7 +6,9 @@ public class FollowTransform : MonoBehaviour
 {
     private Animator animator;
     public Rigidbody2D followRigidBody2D;
+    public GameObject postman;
     public float dogSpeed;
+    private bool isDogSpeedSet = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,23 +26,24 @@ public class FollowTransform : MonoBehaviour
             // transform.Translate(movement);
             
         }
-        if (Input.GetKeyUp(KeyCode.RightArrow)) {
-            if(animator != null) {
-                animator.ResetTrigger("Active");
-                animator.SetTrigger("Idle");
-            }
-        }
+
         if (Input.GetKey("escape"))
         {
             Application.Quit();
         }
     }
     void FixedUpdate() {
-        Vector2 dogSpeedUpdate = followRigidBody2D.velocity * dogSpeed;
-        
-        if (dogSpeedUpdate.x > 0) {
-            this.GetComponent<Rigidbody2D>().velocity = dogSpeedUpdate;
+        // Debug.Log("Postman actual speed " + followRigidBody2D.velocity.x);
+        // Debug.Log("Postman default speed " + postman.GetComponent<Postman>().defaultSpeed.x);
+        if (!isDogSpeedSet && followRigidBody2D.velocity.x > 0) {
+            Vector2 dogSpeedUpdate = postman.GetComponent<Postman>().defaultSpeed * Time.deltaTime * dogSpeed;
+            Debug.Log("Postman velocity" + followRigidBody2D.velocity);
+            Debug.Log("DogSpeed update" + dogSpeedUpdate);
+                this.GetComponent<Rigidbody2D>().velocity = dogSpeedUpdate;
+                Debug.Log("Dog speed: " + this.GetComponent<Rigidbody2D>().velocity);
+                isDogSpeedSet = true;
         }
+
         
     }
 }

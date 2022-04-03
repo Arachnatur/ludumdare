@@ -68,3 +68,63 @@ C# parse time         : 162ms
 candidates check time : 27ms
 console write time    : 0ms
 
+[api-updater (non-obsolete-error-filter)] 4/3/2022 5:10:21 PM : Starting /home/helmi/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 49.98ms
+moved types parse time: 42ms
+candidates parse time : 0ms
+C# parse time         : 174ms
+candidates check time : 25ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/3/2022 5:11:14 PM : Starting /home/helmi/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 49.583ms
+moved types parse time: 42ms
+candidates parse time : 0ms
+C# parse time         : 174ms
+candidates check time : 25ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/3/2022 5:11:51 PM : Starting /home/helmi/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 79.361ms
+moved types parse time: 43ms
+candidates parse time : 0ms
+C# parse time         : 169ms
+candidates check time : 24ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/3/2022 5:12:09 PM : Starting /home/helmi/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 55.568ms
+moved types parse time: 41ms
+candidates parse time : 0ms
+C# parse time         : 175ms
+candidates check time : 26ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/3/2022 5:20:49 PM : Starting /home/helmi/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 50.652ms
+moved types parse time: 42ms
+candidates parse time : 0ms
+C# parse time         : 174ms
+candidates check time : 28ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 4/3/2022 5:42:06 PM : Starting /home/helmi/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 48.516ms
+moved types parse time: 41ms
+candidates parse time : 0ms
+C# parse time         : 166ms
+candidates check time : 24ms
+console write time    : 0ms
+

@@ -5,9 +5,10 @@ using UnityEngine;
 public class Postman : MonoBehaviour
 {
     private Animator animator;
-    public float speed = 50f;
-    public Animator dogAnimator;
+    public float speed = 200f;
     public Canvas startCanvas;
+    public Vector2 defaultSpeed;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +22,14 @@ public class Postman : MonoBehaviour
     {
      
 
-        if (Input.GetKeyDown(KeyCode.RightArrow)) {
+        if (Input.GetKey(KeyCode.RightArrow)) {
             if (animator != null) {
                 animator.ResetTrigger("Idle");
                 animator.SetTrigger("Active");
             }
             float inputX = Input.GetAxis("Horizontal");
-            float inputY = Input.GetAxis("Vertical");
-            GetComponent<Rigidbody2D>().velocity = new Vector2(speed * inputX * Time.deltaTime, 0);
+            Vector2 movementSpeed = new Vector2(speed * inputX * Time.deltaTime, 0);
+            GetComponent<Rigidbody2D>().velocity = movementSpeed;
             // transform.Translate(movement);
             if(startCanvas.enabled) {
                 startCanvas.enabled = false;
@@ -42,5 +43,6 @@ public class Postman : MonoBehaviour
             }
             GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
         }
+
     }
 }
